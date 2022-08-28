@@ -1,0 +1,56 @@
+.trading-container {
+  padding: var(--small2);
+  border-radius: var(--medium1);
+  margin-top: var(--small3);
+  width: 100%;
+}
+
+.trading-container > h4 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.trading-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: var(--xlarge1);
+}
+
+.trading-buttons-container button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: var(--small3);
+  font-size: var(--large1);
+  font-weight: 600;
+  color: var(--primary1);
+  position: relative;
+}
+
+.trading-buttons-container button:hover,
+.trading-buttons-container button.current {
+  color: var(--primary2);
+}
+
+.trading-buttons-container button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary2);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.trading-buttons-container button:hover:after,
+.trading-buttons-container button.current:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.trading-list > p {
+  text-align: center;
+  margin-top: var(--medium2);
+}

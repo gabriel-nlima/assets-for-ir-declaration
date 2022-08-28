@@ -1,0 +1,65 @@
+:root {
+  --primary1: #0bacde;
+  --primary2: #007af5;
+  --primary3: #0b3dde;
+  --primary4: #130dfa;
+  --primary-transparent1: #0bacde4f;
+  --primary-transparent2: #0bacde6e;
+  --secondary1: #de200b;
+  --secondary2: #f50101;
+  --secondary3: #e0004d;
+  --secondary4: #fa0db0;
+  --secondary-transparent1: #f5010140;
+  --secondary-transparent2: #f501018c;
+  --black: #000000;
+  --black-transparent: rgba(0, 0, 0, 0.2);
+  --white: #ffffff;
+  --neutral1: #ebebeb;
+  --neutral2: #f2f2f2;
+  --neutral3: #d6d6d6;
+  --neutral4: #ababab;
+  --neutral-transparent1: rgba(255, 255, 255, 0.4);
+  --neutral-transparent2: rgba(255, 255, 255, 0.2);
+
+  /* Sizes */
+  --small1: 4px;
+  --small2: 6px;
+  --small3: 8px;
+  --medium1: 12px;
+  --medium2: 14px;
+  --medium3: 16px;
+  --large1: 18px;
+  --large2: 20px;
+  --xlarge1: 24px;
+  --xlarge2: 36px;
+}
+
+body {
+  background-color: #040226;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2311004D'/%3E%3Cstop offset='1' stop-color='%23040226'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FF0000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 6px 12px;
+  color: var(--white);
+  font-family: system-ui, sans-serif;
+}
+
+.glass-effect {
+  /* From https://css.glass */
+  background: var(--neutral-transparent2);
+  box-shadow: 0 4px 30px var(--black-transparent);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid var(--neutral-transparent1);
+}
+
+.glass-effect.glass-primary {
+  background: var(--primary-transparent2);
+  border-color: var(--primary-transparent1);
+}
+
+.glass-effect.glass-secondary {
+  background: var(--secondary-transparent1);
+  border-color: var(--secondary-transparent1);
+}

@@ -1,0 +1,44 @@
+section {
+  width: 100%;
+  margin-top: var(--medium1);
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  width: 100%;
+}
+
+h3 .ticker-name {
+  color: var(--primary3);
+  margin-left: var(--small1);
+}
+
+h3 > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 a {
+  font-size: 14px;
+  font-weight: normal;
+  padding: var(--small1);
+  border-radius: 5px;
+  background-color: var(--secondary3);
+  color: var(--white);
+  cursor: pointer;
+}
+
+h3 a:hover {
+  background-color: var(--secondary2);
+}
+
+h3 a:first-child {
+  margin-right: var(--small3);
+}
+
+h3 a.disabled {
+  background-color: var(--neutral1);
+  color: var(--neutral4);
+  pointer-events: none;
+}

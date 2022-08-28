@@ -1,0 +1,17 @@
+.balance-container {
+  padding: var(--small2);
+  border-radius: var(--medium1);
+  margin-bottom: var(--small3);
+  width: 100%;
+}
+
+.balance-container > h4 {
+  text-align: center;
+}
+
+.balance-infos {
+  margin-top: var(--small2);
+  display: flex;
+  justify-content: center;
+  gap: var(--xlarge1);
+}

@@ -1,0 +1,28 @@
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details {
+  align-self: center;
+  width: 100%;
+  text-align: center;
+  padding: var(--small2);
+  border-radius: var(--medium1);
+}
+
+.prices-container {
+  padding: var(--small3);
+  border-radius: var(--medium1);
+}
+
+.prices-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-infos > div {
+  margin-top: var(--small2);
+  display: flex;
+  justify-content: space-between;
+}
